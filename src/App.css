@@ -1,0 +1,147 @@
+
+
+/* Homepage Styles */
+.homepage-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(180deg, #e3eafd 0%, #b6c7e6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.homepage-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  padding: 2rem 4vw;
+  box-sizing: border-box;
+}
+
+.homepage-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 340px;
+}
+
+.homepage-tab {
+  background: #fff;
+  color: #213547;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(33,53,71,0.08);
+}
+
+.homepage-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #213547;
+  margin-bottom: 2rem;
+  line-height: 1.05;
+}
+
+.homepage-desc {
+  font-size: 1.3rem;
+  color: #213547;
+  margin-bottom: 2.5rem;
+  max-width: 520px;
+}
+
+.homepage-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.homepage-call {
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(33,53,71,0.08);
+  cursor: pointer;
+}
+
+.homepage-learn {
+  color: #213547;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0;
+}
+
+.homepage-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 340px;
+}
+
+.homepage-pc {
+  width: 520px;
+  max-width: 90vw;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(33,53,71,0.12);
+  position: relative;
+  z-index: 2;
+}
+
+.homepage-gpu {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  width: 180px;
+  transform: rotate(-20deg);
+  z-index: 3;
+}
+
+@media (max-width: 900px) {
+  .homepage-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2vw;
+  }
+  .homepage-left, .homepage-right {
+    min-width: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .homepage-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .homepage-desc {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 90vw;
+  }
+  .homepage-pc {
+    width: 90vw;
+    max-width: 400px;
+  }
+  .homepage-gpu {
+    left: 10vw;
+    top: -40px;
+    width: 120px;
+  }
+}
